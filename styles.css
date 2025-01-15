@@ -139,6 +139,7 @@ button {
   background-color: #4caf50;
   border: solid 2px black;
   align-self: center;
+  /* font-size: 1.5em; */
 }
 .benefit {
   border: 1px solid #ddd;

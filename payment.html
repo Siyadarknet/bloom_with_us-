@@ -66,15 +66,14 @@
           alert("Please select a payment method before proceeding.");
           return false; // Prevent navigation to confirmation page
         } else {
-          alert(
-            "You have selected " +
-              selectedMethod.value +
-              " as your payment method."
-          );
+          alert("You have selected " + selectedMethod.value +" as your payment method.");
+          setUniqueNumber();
           window.location.href = "payment_conform.html"; // Navigate to confirmation page
+          
         }
       }
     </script>
     <script src="java.js"></script>
+    <script src="product_confi.js"></script>
   </body>
 </html>
