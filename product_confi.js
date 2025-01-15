@@ -1,30 +1,4 @@
 
-// function generateUniqueNumber() { 
-//     // Using current timestamp and a random number to ensure uniqueness 
-//     const uniqueNumber = 'ORDER-' + Date.now() + '-' + Math.floor(Math.random() * 1000000); 
-//     return uniqueNumber; } 
-//     function setUniqueNumber() { 
-//         const piElement = document.getElementById("pi"); 
-//         const uniqueNumber = generateUniqueNumber(); 
-//         piElement.textContent = uniqueNumber; } // Call the function to set the unique number on page load 
-//         // window.onload = setUniqueNumber;
-
-        // function generateUniqueNumber() {
-        //     const uniqueNumber = 'ORDER-' + Date.now() + '-' + Math.floor(Math.random() * 1000000);
-        //     console.log("Generated Unique Number: ", uniqueNumber);
-        //     return uniqueNumber;
-        // }
-        
-        // function setUniqueNumber() {
-        //     const piElement = document.getElementById("pi");
-        //     if (piElement) {
-        //         const uniqueNumber = generateUniqueNumber();
-        //         piElement.textContent = uniqueNumber;
-        //         console.log("Unique number set in the element");
-        //     } else {
-        //         console.error("Element with id 'pi' not found");
-        //     }
-        // }
         
 // Function to generate a unique order ID
 function generateOrderId() {
