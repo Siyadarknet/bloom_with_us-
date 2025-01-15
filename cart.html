@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="cart.css" >
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        button{
+            border: none;
+            font-size: 1em;
+        }
+    </style>
   </head>
   <body>
     <header>
@@ -69,12 +75,11 @@
         quantity.addEventListener("change", updateTotal);
       });
 
-      function checkout() {
-        alert(
-          "Proceeding to checkout with total price: " +
-            document.getElementById("totalPrice").textContent
-          );
-          window.location.href = 'deliv_info.html';
+      function checkout() { 
+        const totalPrice = parseFloat(document.getElementById("totalPrice").textContent.replace('Rs: ', '')); 
+        alert("Proceeding to checkout with total price: Rs: " + totalPrice); 
+        if (totalPrice > 0) { window.location.href = 'deliv_info.html'; }
+        else { alert("Your cart is empty. Please add items to proceed to checkout."); }
       }
     </script>
     <script src="java.js"></script>
