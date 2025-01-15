@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connnect Us For Help & Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Vegetable Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Product</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="login_customer.html">Customer</a></li>
+                <li><a href="login_seller.html">Seller</a></li>
+                <li id="logoutContainer"></li>
+                <li id="logInContainer"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="from-customer-seller">
+        <form id="customer-form">
+            <h2>Contact Us</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="input" required >
+            <br>
+            <label for="mobile">Mobile:</label>
+            <input type="number" id="mobile" name="mobile" class="input" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="input" required>
+            <br>
+            
+           
+           
+            <br>
+            <label for="seller-gender">Country:</label>
+            <select id="seller-countery" name="seller-country" class="input" required>
+                <option value="option">Select Your Country</option>
+                <option value="India">India</option>
+            </select>
+            <br>
+            <label for="">Pin Code:</label>
+            <input type="number" name="pincode" id="pincode" class="input" required> 
+            <br>
+            <label for="reason">Reason:</label>
+            <br>
+            <input type="radio" name="reason" class="input">
+            <label for="reason">Complain</label>
+            <input type="radio" name="reason" class="input">
+            <label for="reason">Suggestion</label>
+            <input type="radio" name="reason" class="input">
+            <label for="greason">Other</label>
+            
+            <br>
+            <label for="related-image">Related Image:</label>
+            <input type="file" id="related-image" name="related-image" accept="image/*" class="input">
+            <br>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vegetable Marketplace</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

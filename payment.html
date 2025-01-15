@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vegetable Marketplace</title>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vegetable Marketplace</h1>
+      <nav>
+        <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="index.html">Products</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="login_customer.html">Customer</a></li>
+              <li><a href="login_seller.html">Seller</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li id="logoutContainer"></li>
+              <li id="logInContainer"></li>
+            </ul>  
+      </nav> 
+    </header>
+
+    <main>
+      <section class="payment-methods">
+        <h2>Select Your Payment Method</h2>
+        <div class="method">
+          <input type="radio" id="card" name="payment" value="card" required />
+          <label for="card">Credit/Debit Card</label>
+        </div>
+        <div class="method">
+          <input
+            type="radio"
+            id="account"
+            name="payment"
+            value="account"
+            required
+          />
+          <label for="account">Bank Account</label>
+        </div>
+        <div class="method">
+          <input type="radio" id="upi" name="payment" value="upi" required />
+          <label for="upi">UPI</label>
+        </div>
+        <div class="method">
+          <input type="radio" id="cod" name="payment" value="cod" required />
+          <label for="cod">Cash on Delivery</label>
+        </div>
+        <button onclick="confirmPayment()">Payment</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Payment Options</p>
+    </footer>
+
+    <script>
+      function confirmPayment() {
+        const selectedMethod = document.querySelector(
+          'input[name="payment"]:checked'
+        );
+
+        if (!selectedMethod) {
+          alert("Please select a payment method before proceeding.");
+          return false; // Prevent navigation to confirmation page
+        } else {
+          alert(
+            "You have selected " +
+              selectedMethod.value +
+              " as your payment method."
+          );
+          window.location.href = "payment_conform.html"; // Navigate to confirmation page
+        }
+      }
+    </script>
+    <script src="java.js"></script>
+  </body>
+</html>

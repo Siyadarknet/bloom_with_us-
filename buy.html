@@ -1,0 +1,175 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Product Information</title>
+    <link rel="stylesheet" href="buy.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vegetable Marketplace</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="cart.html">Check cart</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li id="logoutContainer"></li>
+          <li id="logInContainer"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-details">
+        <h2>Apple</h2>
+        <div class="product-image">
+          <img src="img/apple.jpeg" alt="Apple 360 Degree View" />
+        </div>
+        <div class="product-info">
+          <p><strong>Price:</strong> Rs: 100</p>
+          <p><strong>Seller:</strong> Fruit Seller Ltd.</p>
+          <p><strong>Stock:</strong> Available</p>
+          <p>
+            <strong>Description:</strong>
+            Fresh and juicy apples directly from the farm.
+          </p>
+          <button onclick="addToCart()">Add to Cart</button>
+          <button id="buyNowBtn">Buy Now</a></button>
+          // <button onclick="buyNow()" >Buy Now</button> 
+        </div>
+      </section>
+
+      <section class="customer-reviews">
+        <h3>Customer Reviews</h3>
+        <div class="review">
+          <p><strong>John Doe:</strong> Great quality apples, very fresh!</p>
+          <p><strong>Jane Smith:</strong> Loved the taste, will buy again.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Vegetable Marketplace</p>
+    </footer>
+
+    <script>
+   
+
+      function buyNow() {
+        alert("Proceed to Buy!");
+      }
+      // function addToCart(event) {
+      //   event.preventDefault();
+      //   alert("Added to Cart!");
+      //   window.location.href = 'cart.html';
+      // }
+      function addToCart() {
+        alert("Added to Cart!");
+      }
+      function buyNow() {
+        const purchaseCode = generatePurchaseCode();
+        document.getElementById("purchaseCode").textContent =
+          "Purchase Code: " + purchaseCode;
+        alert("Purchase successful! Your code: " + purchaseCode);
+      }
+      function generatePurchaseCode() {
+        return "PUR-" + Math.floor(Math.random() * 1000000);
+      }
+    </script>
+    <script src="java.js"></script>
+  </body>
+</html> -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Product Information</title>
+    <link rel="stylesheet" href="buy.css" />
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Vegetable Marketplace</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Product</a></li>
+          <!-- <li><a href="products.html">Products</a></li> -->
+          <li><a href="#">Profile</a></li>
+          <li><a href="cart.html">Check cart</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li id="logoutContainer"></li>
+          <li id="logInContainer"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-details">
+        <h2>Apple</h2>
+        <div class="product-image">
+          <img src="img/apple.jpeg" alt="Apple 360 Degree View" />
+        </div>
+        <div class="product-info">
+          <p><strong>Price:</strong> Rs: 100</p>
+          <p><strong>Seller:</strong> Fruit Seller Ltd.</p>
+          <p><strong>Stock:</strong> Available</p>
+          <p>
+            <strong>Description:</strong>
+            Fresh and juicy apples directly from the farm.
+          </p>
+          <button onclick="redirectToCart()">Add to Cart</button>
+          <!-- // <button onclick="addToCart()">Add to Cart</button>  -->
+          <button id="buyNowBtn">Buy Now</button>
+          <!-- // <button onclick="buyNow()" >Buy Now</button>  -->
+        </div>
+      </section>
+
+      <section class="customer-reviews">
+        <h3>Customer Reviews</h3>
+        <div class="review">
+          <p><strong>John Doe:</strong> Great quality apples, very fresh!</p>
+          <p><strong>Jane Smith:</strong> Loved the taste, will buy again.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Vegetable Marketplace</p>
+    </footer>
+
+    <script>
+      function redirectToCart() {
+        alert("Added to Cart!");
+        window.location.href = 'cart.html';
+      }
+
+      function buyNow() {
+        alert("Proceed to Buy!");
+      }
+
+      function buyNow() {
+        const purchaseCode = generatePurchaseCode();
+        document.getElementById("purchaseCode").textContent =
+          "Purchase Code: " + purchaseCode;
+        alert("Purchase successful! Your code: " + purchaseCode);
+      }
+      function generatePurchaseCode() {
+        return "PUR-" + Math.floor(Math.random() * 1000000);
+      }
+    </script>
+    <script src="java.js"></script>
+  </body>
+</html>
+ -->
+
+
+  

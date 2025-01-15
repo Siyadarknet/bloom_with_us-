@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vegetable Marketplace</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="login_customer.html">Already Have Account</a></li>
+          <li><a href="index.html">Product</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Product</a></li>
+          <!-- <li><a href="#">Profile</a></li> -->
+          <li><a href="login_seller.html">Seller</a></li>
+          <li id="logoutContainer"></li>
+          <li id="logInContainer"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="from-customer-seller">
+        <form id="customer-form">
+          <h2>Customer Sign Up</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" class="input" required />
+          <br />
+          <label for="mobile">Mobile:</label>
+          <input
+            type="number"
+            id="mobile"
+            name="mobile"
+            class="input"
+            required
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="input" required />
+          <br />
+          <label for="address">Address:</label>
+          <textarea
+            id="address"
+            name="address"
+            class="input"
+            required
+          ></textarea>
+          <br />
+          <label for="seller-district">District:</label>
+          <select
+            id="seller-district"
+            name="seller-district"
+            class="input"
+            required
+          >
+            <option value="">Select Your District</option>
+            <option value="ludhiana">Ludiana</option>
+            <option value="jalandhar">jalandhar</option>
+          </select>
+          <br />
+          <label for="seller-state">State:</label>
+          <select id="seller-state" name="seller-state" class="input" required>
+            <option value="">Select Your State</option>
+            <option value="punjab">Punjab</option>
+            <option value="bihar">Bihar</option>
+          </select>
+          <br />
+          <label for="seller-gender">Country:</label>
+          <select
+            id="seller-countery"
+            name="seller-country"
+            class="input"
+            required
+          >
+            <option value="">Select Your Country</option>
+            <option value="India">India</option>
+          </select>
+          <br />
+          <label for="">Pin Code:</label>
+          <input
+            type="number"
+            name="pincode"
+            id="pincode"
+            class="input"
+            required
+          />
+          <br />
+          <label for="gender">Gender:</label>
+          <br />
+          <input type="radio" name="gender" class="input" />
+          <label for="gender">Male</label>
+          <input type="radio" name="gender" class="input" />
+          <label for="gender">Female</label>
+          <input type="radio" name="gender" class="input" />
+          <label for="gender">Other</label>
+          <br />
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" class="input" required />
+          <br />
+          <label for="profile-image">Profile Image:</label>
+          <input
+            type="file"
+            id="profile-image"
+            name="profile-image"
+            accept="image/*"
+            class="input"
+          />
+          <br />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="input"
+            required
+          />
+          <br />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="input"
+            required
+          />
+          <br />
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <p>
+            If you have a already
+            <a href="login_customer.html">Loge In</a> Acccout
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Vegetable Marketplace</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Vegetable Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="customer.html">Customer</a></li>
+                
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="from-customer-seller">
+        <form id="seller-form">
+            <h2>Seller Sign Up</h2>
+            <label for="seller-name">Name:</label>
+            <input type="text" id="seller-name" name="seller-name" class="input" required>
+            <br>
+            <label for="shop-name">Shop/Company Name:</label>
+            <input type="text" id="shop-name" name="shop-name" class="input" required>
+            <br>
+            <label for="business-mobile">Mobile:</label>
+            <input type="tel" id="business-mobile" name="business-mobile" class="input" required>
+            <br>
+            <label for="business-email">Email:</label>
+            <input type="email" id="business-email" name="business-email" class="input" required>
+            <br>
+            <label for="shop-address">Business Address:</label>
+            <textarea id="shop-address" name="shop-address" class="input" required></textarea>
+            <br>
+            <label for="seller-district">District:</label>
+            <select id="seller-district" name="seller-district" class="input" required>
+                <option value="option">Select Your District</option>
+                <option value="ludhiana">Ludiana</option>
+                <option value="jalandhar">jalandhar</option>
+            </select>
+            <br>
+            <label for="seller-state">State:</label>
+            <select id="seller-state" name="seller-state" class="input" required>
+                <option value="option">Select Your State</option>
+                <option value="punjab">Punjab</option>
+                <option value="bihar">Bihar</option>
+            </select>
+            <br>
+            <label for="seller-gender">Country:</label>
+            <select id="seller-countery" name="seller-country" class="input" required>
+                <option value="option">Select Your Country</option>
+                <option value="India">India</option>
+            </select>
+            <br>
+            <label for="">PIN CORD:</label>
+            <input type="number" name="pincode" id="pincode" class="input" required> 
+            <br>
+            <label for="seller-dob">Date of Birth:</label>
+            <input type="date" id="seller-dob" name="seller-dob" class="input" required>
+            <br>
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" name="gender" class="input">
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" class="input">
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" class="input">
+            <label for="gender">Other</label>
+            <br>
+            <label for="profile-image">Profile Image:</label>
+            <input type="file" id="profile-image" name="profile-image" accept="image/*" class="input">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="input" required>
+            <br>
+            <label for="password">Conform Password:</label>
+            <input type="password" id="password" name="password" class="input" required>
+            <br>
+            <label for="business-start-date">Date of Start Business  :</label>
+            <input type="date" id="business-start-date" name="business-start-date" class="input" required>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <p>If you are already Seller ID <a href="login_seller.html">LogIn</a></p>
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vegetable Marketplace</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
