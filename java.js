@@ -47,7 +47,7 @@ function renderLogoutButton() {
 function redirectToLogin() {
   const logInContainer = document.createElement("logInContainer");
   alert("You need to login first!");
-
+  
   window.location.href = "login_customer.html";
 }
 
